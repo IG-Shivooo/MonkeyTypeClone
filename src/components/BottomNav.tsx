@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Keyboard, History, Settings, Info } from "lucide-react";
+import { Keyboard, History, Settings, Info, GraduationCap } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
   { href: "/", label: "Test", icon: Keyboard },
+  { href: "/learn", label: "Learn", icon: GraduationCap },
   { href: "/history", label: "History", icon: History },
   { href: "/settings", label: "Settings", icon: Settings },
   { href: "/about", label: "About", icon: Info },
