@@ -3,6 +3,7 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 import { SettingsProvider } from '@/contexts/SettingsContext';
 import BottomNav from '@/components/BottomNav';
+import Header from '@/components/Header';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
@@ -32,6 +33,7 @@ export default function RootLayout({
             'pb-20 sm:pb-0'
           )}
         >
+          <Header />
           <main className="container mx-auto max-w-7xl px-4 py-8">
             {children}
           </main>
